@@ -1,0 +1,465 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+header {
+    background-color: lightcoral;
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Section Styles */
+section {
+    padding: 20px;
+}
+
+#about {
+    background-color: #f9f9f9;
+}
+
+#services {
+    background-color: #fff;
+}
+
+.service {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Hover Effects */
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.service:hover {
+    background-color: #f1f1f1;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght") */
+
+:root{
+    --primary-color:#e82574;
+    --primary-color-dark:#bc1c5c;
+    --text-dark:#0c0a09;
+    --text-light:#78716c;
+    --white:#ffffff;
+    --max-width:1200px;
+}
+
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} */
+
+
+
+body{
+    font-family: "Poppins",sans-serif;
+}
+
+
+.btn{
+    padding: 0.75rem 1.5rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+    background-color:lightblue;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    background-image: url("assests/hammocks-near-pool.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.header__container{
+    padding-block: 10rem 15rem;
+}
+
+.header__container p{
+    margin-bottom: 1rem;
+}
+
+.booking__container{
+    padding-block: 12;
+}
+
+.booking__form{
+    padding: 2rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    transform: translate(-1%);
+    box-shadow: 5px 5px 20px rgba(0,0,0.1);
+}
+
+.input__group{
+    flex: 1 1 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.input__group span {
+ font-size: 1.75rem;
+ color: var(--primary-color);
+}
+
+.input__group label{
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.input__group input{
+    display: block;
+    width: 100%;
+    max-width: 150px;
+    padding-block: 5px;
+    color: var(--text-dark);
+    /* font-size: 0.9rem;
+    outline: none; */
+}
+
+.input__group input::placeholder{
+    color: var(--text-light);
+}
+
+.about__container{
+    overflow: hidden;
+    display: grid;
+    gap: 2 rem;
+}
+
+.about__image img{
+    max-width: 450px;
+    margin: auto;
+    border-radius: 5px;
+    
+}
+
+.about__container{
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+
+.room__grid{
+    margin-top: 4rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.room__card__image img{
+    max-width: 450px;
+}
+
+
+.room__card__image{
+    position: relative;
+    isolation: isolate;
+}
+
+.room__card{
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0);
+}
+
+.room__card__icons{
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 1rem;
+    z-index: 1;
+}
+
+.room__card__icons span{
+    display: inline-block;
+    padding: 2px 8px;
+    font-size: 1.5rem;
+    background-color: var(--white);
+    border-radius: 100%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.room__card__icons span:nth-child(1){
+    color: #bc1c5c;
+}
+
+.room__card__icons span:nth-child(2){
+    color: blueviolet;
+}
+
+.room__card__icons span:nth-child(3){
+    color: yellow;
+}
+
+.room__card__details{
+    padding: 1rem;
+}
+
+.room__card h4{
+    margin-bottom: .5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.room__card p{
+    margin-bottom: 0.5rem;
+    color: var(--text-light);
+}
+
+.room__card h5{
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-light);
+}
+
+.room__card h5{
+    font-size: 1.1rem;
+    color: var(--text-dark);
+}
+
+
+.service{
+    background-image: url("assests/pexels-julieaagaard-2096983.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.service__container{
+    padding-block: 0;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.service__content{
+    grid-column: 1/1;
+    padding: 2rem 1rem;
+    background-color: var(--white);
+}
+
+.service__list{
+    list-style: none;
+    margin-top: 2rem;
+    display: grid;
+    gap: 2rem;
+}
+
+.service__list li{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.service__list span{
+    padding: 5px 12px;
+    font-size: 1.75rem;
+    color: var(--text-dark);
+    background-color: var(--text-light);
+    border-radius: 0%;
+}
+
+.service__list li:nth-child(1) span{
+    color: blueviolet;
+    background-color: palevioletred;
+}
+
+.service__list li:nth-child(2) span{
+    color: lightblue;
+    background-color: rgb(185, 7, 66);
+}
+
+.service__list li:nth-child(3) span{
+    color: blueviolet;
+    background-color: palevioletred;
+}
+
+.service__list li:nth-child(4) span{
+    color: blueviolet;
+    background-color: palevioletred;
+}
+
+.banner__content{
+    padding: 2rem;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.banner__card{
+    text-align: center;
+    flex: 1 1 150px;
+}
+
+.banner__card h4 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.banner__card p{
+    color: var(--text-light);
+}
+
+
+.explore :is(.section__subheader, .section__header){
+    text-align: center;
+    margin-inline: auto;
+}
+
+.explore__bg{
+    margin-top: 4rem;
+    padding-block: 3rem;
+    display: grid;
+    grid-template-columns:
+    minmax(1rem,1fr)
+    minmax(0,var(--max-width));
+    background-image: url("assests/valeriia-bugaiova-_pPHgeHz1uk-unsplash.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+
+.explore__content{
+    grid-column: 2/3;
+    max-width: 400px;
+    padding: 2rem;
+    background-color: var(--white);
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0);
+}
+
+.explore__content h4{
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    color: var(--text-dark);
+}
+
+
+.explore__content .btn{
+    color: var(--primary-color);
+    background-color: var(--white);
+    border: 1px solid var(--primary-color);
+}
+
+.explore__content .btn:hover{
+    color: var(--white);
+    background-color: var(--primary-color);
+}
+
+.footer__col{
+    background-color: var(--text-dark);
+}
+
+.footer__col h4{
+    color: whitesmoke;
+}
+
+.footer__container{
+    display: grid;
+    gap: 4rem 2rem;
+}
+
+.footer__col .section__description{
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--white);
+}
+
+.footer__links{
+    list-style: none;
+    display: grid;
+    gap: 1rem;
+}
+
+.footer__links a{
+    color: var(--white);
+    transition: 0.3s;
+}
+
+.footer__links a:hover{
+    color: var(--white);
+}
+
+.footer__socials{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.footer__socials img{
+    max-width: 25px;
+    opacity: 0.8;
+    transition: 0.3s;
+}
